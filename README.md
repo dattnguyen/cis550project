@@ -8,4 +8,5 @@ Backend:
 - npm install oracledb
 
 Frontend:
+- npm install
 - npm run serve -- --port 3000
