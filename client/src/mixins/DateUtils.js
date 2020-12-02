@@ -39,7 +39,7 @@ export default {
       if (day.toString().length == 1) day = "0" + day;
       if (month.toString().length == 1) month = "0" + month;
 
-      return day + "/" + month + "/" + year;
+      return month + "/" + day + "/" + year;
     },
 
     convertDateDbToDateClient(str) {
@@ -47,14 +47,14 @@ export default {
         var datetime = str.split("T");
 
         var date = datetime[0].split("-");
-        return date[2] + "/" + date[1] + "/" + date[0];
+        return date[1] + "/" + date[2] + "/" + date[0];
       }
     },
 
     convertDateClientToDateDb(str) {
       if (str) {
         var date = str.split("/");
-        return date[2] + "-" + date[1] + "-" + date[0];
+        return date[1] + "-" + date[2] + "-" + date[0];
       }
 
       return null;
