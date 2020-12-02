@@ -265,7 +265,7 @@ export default {
         this.addError(
           "confirmPassword",
           false,
-          "Confirm password is not be empty",
+          "Confirm password cannot be empty",
           this.errorsRegister
         );
       }

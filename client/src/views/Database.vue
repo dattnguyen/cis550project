@@ -49,11 +49,11 @@
           </div>
           <div class="col-md-3">
             <diV class="form-group-row">
-              <label class="col-sm-4 mt-1">Air date</label>
+              <label class="col-sm-4 mt-1">Airdate</label>
               <el-select
                 class="select-danger select-custom font-italic col-sm-8 rounded-0"
                 v-model="airDateSearch"
-                :placeholder="'Air date'"
+                :placeholder="'Airdate'"
                 :clearable="true"
                 :filterable="true"
               >
@@ -188,7 +188,7 @@ export default {
           text: "Show number",
         },
         {
-          text: "Air date",
+          text: "Airdate",
         },
         {
           text: "Status",

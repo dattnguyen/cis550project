@@ -2,7 +2,7 @@ var config = require("./db-config.js");
 var oracledb = require("oracledb");
 
 oracledb.initOracleClient({
-  libDir: "C:\\Users\\cenam\\Documents\\dev\\instantclient_19_9",
+  libDir: '/Users/datnguyen/Project550/instantclient_19_8',
 });
 
 oracledb.autoCommit = true;

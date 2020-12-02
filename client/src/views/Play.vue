@@ -7,7 +7,7 @@
       <div v-if="!isClickStart">
         <h2 class="color-white">Let's Play Jeopardy!</h2>
         <h4 class="color-white">
-          Choose a Season, Air Date, and Round to Start
+          Choose a Season, Airdate, and Round to Start
         </h4>
       </div>
       <div class="row mt-4">
@@ -38,7 +38,7 @@
               <el-select
                 class="select-danger select-custom font-italic col-sm-12 rounded-0"
                 v-model="airDateSearch"
-                :placeholder="'Air date'"
+                :placeholder="'Airdate'"
                 :clearable="true"
                 :filterable="true"
               >
