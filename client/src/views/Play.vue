@@ -1,7 +1,6 @@
 <template>
 
-  <div class="container-fluid">
-    <div class="row ml-0 mr-0 bg-play" style="height: 250px"></div>
+  <div class="container-fluid bg-play">
   
     <div class="col-12 pt-4" style="text-align: center">
       <div v-if="!isClickStart">
