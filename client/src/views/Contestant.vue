@@ -12,25 +12,33 @@
             </h2>
           </h1>
         </center>
+        
+        <div style="white-space: pre-line;">{{textWithLineBreaks}}
+        </div>
+        
         <h3>
           {{ occupationText }}
         </h3>
 
-        <card header-classes="bg-transparent pt-3">
-          <div slot="header" class="row align-items-center">
-            <div class="col">
-              <h6 class="text-uppercase text-muted ls-1 mb-1">Winners</h6>
-              <h5 class="h3 mb-0">By Occupation</h5>
+        <div class="col md 12">
+          <card header-classes="bg-transparent pt-3">
+            <div slot="header" class="row align-items-center">
+              <div class="col">
+                <h6 class="text-uppercase text-muted ls-1 mb-1">Winners</h6>
+                <h5 class="h3 mb-0">By Occupation</h5>
+              </div>
             </div>
-          </div>
 
-          <bar-chart
-            :height="350"
-            ref="barChart"
-            :chart-data="occupation.chartData"
-          >
-          </bar-chart>
-        </card>
+            <bar-chart
+              :height="350"
+              ref="barChart"
+              :chart-data="occupation.chartData"
+            >
+            </bar-chart>
+          </card>
+        </div>
+        <br>
+        <br>
       </div>
 
       <div class="col-md-12 mt-2 mb-2">
@@ -38,17 +46,21 @@
           {{ stateText }}
         </h3>
 
-        <card header-classes="bg-transparent pt-3">
-          <div slot="header" class="row align-items-center">
-            <div class="col">
-              <h6 class="text-uppercase text-muted ls-1 mb-1">Top Winners</h6>
-              <h5 class="h3 mb-0">By Longest, Consecutive Winning Streak</h5>
+        <div class="col md 12">
+          <card header-classes="bg-transparent pt-3">
+            <div slot="header" class="row align-items-center">
+              <div class="col">
+                <h6 class="text-uppercase text-muted ls-1 mb-1">Top Winners</h6>
+                <h5 class="h3 mb-0">By Longest, Consecutive Winning Streak</h5>
+              </div>
             </div>
-          </div>
 
-          <bar-chart :height="350" ref="barChart" :chart-data="state.chartData">
-          </bar-chart>
-        </card>
+            <bar-chart :height="350" ref="barChart" :chart-data="state.chartData">
+            </bar-chart>
+          </card>
+        </div>
+        <br>
+        <br>
       </div>
 
       <div class="col-md-12 mt-2 mb-2">
@@ -58,6 +70,12 @@
         >
         </Tableau>
       </div>
+    </div>
+
+    <div class="col-md-12 mt-2 mb-2">
+      <h2>
+        {{ '      Example of some complex queries.' }}
+      </h2>
     </div>
 
     <div class="row ml-0 mr-0">

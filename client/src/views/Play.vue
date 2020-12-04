@@ -116,7 +116,7 @@
     </div>
     <br />
     <div style="text-align: center" v-if="isClickStart">
-      <h2 class="pt-3 pl-3 color-white" style="height: 80px">
+      <h2 class="pt-3 pl-3 color-black" style="height: 80px">
         {{ question }}
       </h2>
       <br />
