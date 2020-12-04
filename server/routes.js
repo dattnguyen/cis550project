@@ -90,7 +90,7 @@ async function getDatabase(req, res) {
     query += ` AND js.SEASON = '${season}'`;
 
   if (airDate != null && airDate != undefined)
-    query += ` AND TO_CHAR(js.AIRDATE, 'dd/MM/yyyy') = '${airDate}'`;
+    query += ` AND TO_CHAR(js.AIRDATE, 'MM/dd/yyyy') = '${airDate}'`;
 
   if (isWinner != null && isWinner != undefined)
     query += ` AND cp.ISWINNER = '${isWinner}'`;
@@ -113,7 +113,7 @@ async function getDatabase(req, res) {
     queryCount += ` AND js.SEASON = '${season}'`;
 
   if (airDate != null && airDate != undefined)
-    queryCount += ` AND TO_CHAR(js.AIRDATE, 'dd/MM/yyyy') = '${airDate}'`;
+    queryCount += ` AND TO_CHAR(js.AIRDATE, 'MM/dd/yyyy') = '${airDate}'`;
 
   if (isWinner != null && isWinner != undefined)
     queryCount += ` AND cp.ISWINNER = '${isWinner}'`;

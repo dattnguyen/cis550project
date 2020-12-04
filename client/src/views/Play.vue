@@ -1,8 +1,8 @@
 <template>
-  <div
-    class="container-fluid"
-    style="background-color: rgb(0, 31, 146); height: 94vh; width: 100%"
-  >
+
+  <div class="container-fluid">
+    <div class="row ml-0 mr-0 bg-play" style="height: 250px"></div>
+  
     <div class="col-12 pt-4" style="text-align: center">
       <div v-if="!isClickStart">
         <h2 class="color-white">Let's Play Jeopardy!</h2>
