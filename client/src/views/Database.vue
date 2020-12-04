@@ -6,7 +6,7 @@
       <br />
       <div class="col-md-12">
           <h2>
-            {{ 'Select one of the filters below to start your queries!' }}
+            {{ 'Select One of the Filters Below to Start Your Queries!' }}
           </h2>
           <br>
         <div class="row">
