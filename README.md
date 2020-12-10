@@ -1,4 +1,4 @@
-# cis550project
+# jeopardy_web_app
 Jeopardy!
 
 - Install the "Basic package" and the "SDK package" here: https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html
