@@ -640,7 +640,8 @@ async function checkAnswer(req, res) {
     FROM    JEOPARDY_EPISODE EP
             INNER JOIN JEOPARDY_QA QA ON EP.QID = QA.QID
     WHERE   EP.EID = ${id}
-            AND LOWER(answer) LIKE '%${answer}%'`;
+            AND LOWER(answer) LIKE '%${answer}%'
+            AND LENGTH(answer)/2 <= LENGTH('${answer}')`;
   try {
     const result = await connection.execute(query, [], {
       outFormat: oracledb.OUT_FORMAT_OBJECT,
